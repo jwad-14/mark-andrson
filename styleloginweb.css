@@ -1,0 +1,85 @@
+/* ---------- Body ---------- */
+body {
+    font-family:  Arial,Helvetica, sans-serif;
+    background: linear-gradient(  #43daf5 ,#0099ffd5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* لتجنب مشاكل الأجهزة الصغيرة */
+    margin: 0;
+}
+
+/* ---------- Login Title ---------- */
+.login-title {
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+/* ---------- Form ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;          /* عرض نسبي للشاشات الصغيرة */
+    max-width: 360px;   /* الحد الأقصى */
+    box-sizing: border-box;
+    min-width:250px;    /* الحد الأدنى */
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #c2d7f7e3; /* لونك الجميل، متوافق */
+    box-shadow: 0 6px 15px #00000026; /* لمسة احترافية */
+    transition: transform 0.3s;
+}
+
+/* ---------- Inputs ---------- */
+form input {
+    border: none;
+    outline: none;
+    background-color: #d8e7fd;
+    color: #374151;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* ---------- Input Focus ---------- */
+form input:focus {
+    background-color: #bddefa; /* لون عند التركيز */
+    box-shadow: 0 0 5px #ecfeff;
+}
+
+/* ---------- Button ---------- */
+form button {
+    background-color: #19bdfdd0; /* اللون الأساسي */
+    color: #ffffff;
+    padding: 8px 0;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* ---------- Button Hover ---------- */
+form button:hover {
+    background: linear-gradient(  #43daf5 ,#00f7ff); /* اللون عند المرور بالماوس */
+    transform: translateY(-4px);
+
+}
+
+/* ---------- Media Query للأجهزة الصغيرة جدًا ---------- */
+@media (max-width: 280px) {
+    form {
+        padding: 15px;
+        width: 95%;
+    }
+    form input, form button {
+        font-size: 13px;
+        padding: 6px;
+    }
+}
